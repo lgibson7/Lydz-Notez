@@ -1,0 +1,119 @@
+---
+title: "Prob and Stat Inference"
+author: "Lydia Gibson"
+date: "11/13/2021"
+output: pdf_document
+---
+
+
+# Chapter 4
+
+## 4.1 Bivariate Distributions of the Discrete Type
+
+### Definition 4.1-1
+Let X and Y be two random variables defined on a discrete sample space. Let S denote the corresponding two-dimensional space of X and Y, the two random variables of the discrete type. The probability that X=x and Y=y is denoted by $f(x,y)=P(X=x,Y=y)$. The function $f(x,y)$ is called the *joint probability mass function* (joint pmf) of X and Y and has the following properties:
+(a) $0\le f(x,y\ge1)$
+(b)$\sum\sum_{(x,y\in S)}f(x,y)=1$
+(c)$P[(X,Y)\in A]=\sum\sum_{(x,y\in A)}f(x,y)$
+
+
+### Definition 4.1-2
+Let X and Y have the joint probability mass function f(x,y), with Space S. The probability mass function of X alone, which is called the *marginal probability mass function of X*, is defined by
+
+$f_x(x)=\sum_yf(x,y)=P(X=x)$
+
+where the summation is taken over all prossible y values for each given x in the x space $S_x$. That is, the summation is over all (x,y) in S with a given x value. Similarly, the *marginal probability mass function of Y* is defined by 
+
+$f_y(y)=\sum_xf(x,y)=P(Y=y), y\in S_Y$,
+
+where the summation is taken over all possible x values for each given y in the y space $S_Y$. The random variables X and Y are independent if and only if
+
+$P(X=x,Y=y)=P(X=x)P(Y=y)$
+
+or, equivalently,
+
+$f(x,y)=f_x(x)f_y(y), x \in S_X, y \in S_Y$;
+
+otherwise, X and Y are said to be dependent.
+
+**mean**
+
+**variance**
+
+**trinomial pmf**
+
+
+## 4.2 The correlation coefficient
+
+**covariance**
+
+**correlation coefficient**....$\rho$
+
+**least squares regression line**
+
+## 4.3 Conditional Distributions
+
+### Definition 4.3-1
+The conditional probability mass function of X, given that Y=y, is defined by
+
+$g(x|y)=\frac{f(x,y)}{f_Y(y)}$, provided that $f_Y(y)>0$.
+
+Similarly, the conditional probability mass function of Y, given that X=x, is defined by
+
+$h(y|x)=\frac{f(x.y)}{f_X(x)}$, provided that $f_X(x)>0$.
+
+**Law of Total Probability for Expectation**
+
+### Theorem 4.3-1
+
+Let X and Y be random variables of discrete type such that E(Y) exists. Then $E[E(Y|X)]=E(Y)$.
+
+**Proof**
+
+$E[E(Y|X)]=\sum_{S_X}[\sum_{S_Y}y\cdot h(y|x)]f_X(x)$
+
+$=\sum_{S_X}\sum_{S_Y}[y\frac{f(x,y)}{f_X(x)}]\cdot f_X(x)$
+
+$=\sum_{S_X}\sum_{S_Y}y\cdot f(x,y)=\sum_{S_Y}y\sum_{S_X}f(x,y)$
+
+$=\sum_{S_X}y\cdot f_Y(y)=E(Y)$
+
+**Law of Total Probaility of Variance**
+
+If X and Y are random variable of discrete type, then
+
+$E[Var(Y|X)]+Var[E(Y|X)]=Var(Y)$
+
+provided that all of the expectations and variances exist.
+
+**Proof** Using the linearity of mathematical expectation and the Law of Total Probability for Expectation, we have
+
+$E[Var(Y|X)]=E\{E(Y^2|X)-[E(Y|X)]^2 \}$
+
+$=E[E(Y^2|X)]-E\{[E(Y|X)]^2\}$
+
+$=E(Y^2)-E\{[E(Y|X)]^2\}$.
+
+By the same token, we have
+
+$Var[E(Y|X)]=E\{[E(Y|X)]^2\}-\{E[E(Y|X)]\}^2$
+
+$=E\{[E(Y|X)]^2\}-[E(Y)]^2$
+
+Adding the equations, we find that
+
+$E[Var(Y|X)]+Var[E(Y|X)]=E(Y^2)-[E(Y)]^2=Var(Y)$
+
+## 4.4 Bivariate Distributions of the Continuous Type
+
+**joint probability density function**
+
+(a)$f(x,y)\ge 0$ where f(x,y)=0 when (x,y) is not in the support (space) S of X and Y.
+
+(b)
+
+**marginal pdfs**
+
+
+
+
