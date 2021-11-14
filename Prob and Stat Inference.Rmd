@@ -110,10 +110,15 @@ $E[Var(Y|X)]+Var[E(Y|X)]=E(Y^2)-[E(Y)]^2=Var(Y)$
 
 (a)$f(x,y)\ge 0$ where f(x,y)=0 when (x,y) is not in the support (space) S of X and Y.
 
-(b)
+(b)$\int_{-\infty}^{\infty} \int_{-\infty}^{\infty}f(x,y)dxdy=1$
+
+(c)$P[(X,Y) \in A]= \iint_A f(x,y)dx dy, where \space \{(X,Y)\in A\}$ is an event defined in the plane.
 
 **marginal pdfs**
 
+$f_X(x)=\int_{-\infty}^{\infty}f(x,y)dy, x\in S_X$
+
+$f_Y(y)=\int_{-\infty}^{\infty}f(x,y)dx, y\in S_Y$
 
 
 

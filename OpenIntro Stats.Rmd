@@ -2,7 +2,9 @@
 title: "OpenIntro Stats"
 author: "Lydia Gibson"
 date: "11/4/2021"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 # Chapter 1: Introduction to data
@@ -17,9 +19,76 @@ output: html_document
 
 
 
+
+
+
+
+
+
+
 # Chapter 3: Probability
 
 ## 3.4 Random Variables
+
+### 3.4.1 Expectation
+
+**Random Variable** 
+
+A random process or variable with a numerical outcome
+
+**Expected Value of a Discrete Random Variable**
+
+If *X* takes outcomes $x_1, ...x_k$ with probabilities $P(X=x_1),...,P(X=x_k)$, the expected value of X is the sum of each outcome multiplied by it's corresponding probability:
+
+$E(X)=x_1\times P(X=x_1)+...+x_k +P(X=x_k)$
+
+$=\sum_{i=1}^{k}x_iP(X=x_i)$
+
+The Greek letter $\mu$ may be used in place of the notation E(X).
+
+### 3.4.2 Variability in random variables
+
+**General Variance Formula**
+
+If X takes outcomes $x_1,...,x_k$ with probabilities $P(X=x_1),...,P(X=x_k)$ and expected value $\mu=E(X)$, then the variance of X, denoted by Var(X) or the symbol $\sigma^2$, is 
+
+$\sigma^2=(x_1-\mu)^2 \times P(X=x_i)+...+(x_k-\mu)^2 \times P(X=x_k)$
+
+$=\sum_{j=1}^k (x_j-\mu)^2P(X=x_j)$
+
+The standard deviationof X, labeled $\sigma$, is the square root of the variance.
+
+### 3.4.3 Linear combinations of random variables
+
+**Linear Combinations of Random Varibales and the Average Result**
+
+If X and Y are random variables, then the linear combination of the random varibales is given by
+
+$aX=bY$
+
+where a and b are fixed numbers. To compute the average value of a linear combination of random variables, plug in the average of each individula random variable and compute the result:
+
+$a \times E(X)+b\times E(Y)$
+
+Recall that the expected value is the same as the mean, e.g. $E(X)=\mu_X$
+
+**3.4.4 Variability in the linear combinations of random variables**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Chapter 4: Distributions of random variables
@@ -27,7 +96,26 @@ output: html_document
 ## 4.1 Normal distribution
 
 
+
+
+
+
+
+
+
+
 # Chapter 5: Foundations for inference
+
+## 5.1 Point estimates and sampling variability
+
+## 5.2 Confidence Intervals for a proportion
+
+## 5.3 Hypothesis testing for a proportion
+
+
+
+
+
 
 
 
@@ -141,6 +229,19 @@ Similarly $\hat p_2n_2$ represents the number of successes in sample 2.
 ### 6.2.4 More on 2-proportion hypothesis tests (special topic)
 
 ### 6.2.5 Examining the standard error formula (special topic)
+
+
+## 6.3 Testing for goodness of fit using Chi-square
+
+
+
+## 6.4 Testing for Independence in two-way tables
+
+
+
+
+
+
 
 
 
