@@ -1,0 +1,56 @@
+---
+title: "FCDAE Chapter 3 cheat sheet"
+author: "Lydia Gibson"
+date: "2/16/2022"
+output: pdf_document
+---
+
+## Point estimators in the CRD
+
+### *Single means model*
+
+| **Parameter** | **Estimator** |
+|-|-|
+|$\mu$| $\bar y_{\bullet\bullet}$ |
+| $\sigma^2$ | $\frac{\sum_{i=1}^g \sum_{j=1}^{n_i}(y_{ij}-\bar y_{i\bullet})^2}{N-g}$ |
+
+
+
+
+### *Seperate means mode*l
+
+| **Parameter** | **Estimator** |
+|-|-|
+| $\mu$ | $\bar y_{\bullet\bullet}$ |
+| $\mu_i$ | $\bar y_{i\bullet}$ |
+| $\alpha_i$ | $\bar y_{i\bullet}-\bar y_{\bullet \bullet}$ |
+| $\sigma^2$ | $\frac{\sum_{i=1}^g \sum_{j=1}^{n_i}(y_{ij}-\bar y_{i\bullet})^2}{N-g}$ |
+
+
+## Standard errors of point estimators in the CRD
+
+
+| **Parameter** | **Estimator** | **Standard Error** |
+|-|-|-|
+| $\mu$ | $\bar y_{\bullet\bullet}$ | $s/\sqrt{N}$ |
+| $\mu_i$ | $\bar y_{i\bullet}$ | $s/\sqrt{n_i}$ |
+| $\alpha_i$ | $\bar y_{i\bullet}-\bar y_{\bullet \bullet}$ | $s \sqrt{1/n_i -1/N}$ |
+
+
+## Sum of squares in the CRD
+
+|  |
+|-|
+| $SS_{Trt} =\sum _{i=1}^g n_i\hat \alpha_i^2$ |
+| $SS_E=\sum_{i=1}^g\sum_{j=1}^{n_i}(y_{ij}-\bar y_{1\bullet})^2$ |
+| $SS_T=SS_{Trt}+SS_E$ |
+
+  
+## Generic ANOVA table
+
+|**Source** | **DF** | **SS** | **MS** | **F** |
+|-|-|-|-|-|
+|*Treatments*| g-1| $SS_{Trt}$| $SS_{Trt}$/g-1|$MS_{Trt}$/$MS_E$|
+|*Error* |N-g|$SS_E$|$SS_E$/(N-g)| |
+
+
