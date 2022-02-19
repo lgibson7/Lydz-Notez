@@ -48,9 +48,10 @@ output: pdf_document
   
 ## Generic ANOVA table
 
-|**Source** | **DF** | **SS** | **MS** | **F** |
-|-|-|-|-|-|
-|*Treatments*| g-1| $SS_{Trt}$| $SS_{Trt}$/g-1|$MS_{Trt}$/$MS_E$|
-|*Error* |N-g|$SS_E$|$SS_E$/(N-g)| |
+|**Source** | **DF** | **SS** | **MS** | **F** | **p-value** |
+|-|-|-|-|-|-|
+|*Treatments*| g-1| $SS_{Trt}$| $SS_{Trt}$/g-1|$MS_{Trt}$/$MS_E$| |
+|*Error* |N-g|$SS_E$|$SS_E$/(N-g)| | | |
+|*Total*|N-1|$SS_T=SS_{Trt}+SS_E$| | | | 
 
 

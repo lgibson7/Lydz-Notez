@@ -1,0 +1,58 @@
+---
+title: "Regression Ch 3"
+author: "Lydia Gibson"
+date: "2/19/2022"
+output: pdf_document
+---
+
+# Diagnostic and Transformations for Simple Linear Regression
+
+##3.1 Valid and Invalid Regression Models
+
+
+### 3.1.1. Residuals
+
+### 3.1.2 Plots of Residuals
+
+### 3.1.3 Example of a Quadratic Model
+
+
+
+
+
+
+
+
+
+## 3.2 Regression Diagnostics: Tools for Checking
+
+### 3.2.1 Leverage Points
+
+### 3.2.2 Standardized Residuals
+
+### 3.2.3 Recommendations for Handling Outiers and Leverage Points
+
+
+### 3.2.4 Assessing the Influence of Certain Cases
+
+### 3.2.5 Normality of Errors
+
+### 3.2.6 Constant Variance
+
+
+
+
+
+
+## 3.3. Transformations
+
+### 3.3.1 Using Transformations to Stabalize Variance
+
+### 3.3.2 Using Logarithms to Estimate Percentage Effects
+
+
+
+
+
+
+
